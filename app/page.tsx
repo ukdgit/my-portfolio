@@ -3,12 +3,14 @@ import { Experience } from "@/components/portfolio/Experience";
 import { Footer } from "@/components/portfolio/Footer";
 import { Header } from "@/components/portfolio/Header";
 import { Hero } from "@/components/portfolio/Hero";
+import { InteractiveBackdrop } from "@/components/portfolio/InteractiveBackdrop";
 import { Projects } from "@/components/portfolio/Projects";
 import { Skills } from "@/components/portfolio/Skills";
 
 export default function Home() {
   return (
     <div className="min-h-full bg-zinc-950 text-zinc-100">
+      <InteractiveBackdrop />
       <Header />
       <main>
         <Hero />
