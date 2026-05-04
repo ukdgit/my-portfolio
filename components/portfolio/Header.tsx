@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Menu, X } from "lucide-react";
+import { FileText, Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const nav = [
@@ -11,6 +11,8 @@ const nav = [
   { href: "#projects", label: "Projects" },
   { href: "#skills", label: "Skills" },
 ] as const;
+
+const RESUME_HREF = "/Umakant_Dwivedi_PM_Resume.pdf";
 
 export function Header() {
   const [open, setOpen] = useState(false);
@@ -39,17 +41,28 @@ export function Header() {
           Umakant Dwivedi
         </a>
 
-        <nav className="hidden items-center gap-1 md:flex">
-          {nav.map((item) => (
-            <a
-              key={item.href}
-              href={item.href}
-              className="rounded-lg px-3 py-2 text-sm font-medium text-zinc-400 transition-colors hover:bg-zinc-800/60 hover:text-violet-300"
-            >
-              {item.label}
-            </a>
-          ))}
-        </nav>
+        <div className="hidden items-center gap-2 md:flex">
+          <nav className="flex items-center gap-1">
+            {nav.map((item) => (
+              <a
+                key={item.href}
+                href={item.href}
+                className="rounded-lg px-3 py-2 text-sm font-medium text-zinc-400 transition-colors hover:bg-zinc-800/60 hover:text-violet-300"
+              >
+                {item.label}
+              </a>
+            ))}
+          </nav>
+          <a
+            href={RESUME_HREF}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-full bg-violet-600 px-4 py-2 text-sm font-semibold text-white shadow-lg shadow-violet-900/35 transition hover:bg-violet-500"
+          >
+            <FileText className="size-4" />
+            Resume
+          </a>
+        </div>
 
         <button
           type="button"
@@ -82,6 +95,16 @@ export function Header() {
                   {item.label}
                 </a>
               ))}
+              <a
+                href={RESUME_HREF}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-1 inline-flex items-center justify-center gap-2 rounded-lg bg-violet-600 px-3 py-2.5 text-sm font-semibold text-white hover:bg-violet-500"
+                onClick={() => setOpen(false)}
+              >
+                <FileText className="size-4" />
+                Resume
+              </a>
             </nav>
           </motion.div>
         ) : null}

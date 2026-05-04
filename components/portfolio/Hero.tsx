@@ -29,7 +29,7 @@ export function Hero() {
               transition={{ duration: 0.45 }}
               className="mb-4 text-sm font-medium uppercase tracking-[0.2em] text-violet-400/90"
             >
-              SDE ➔ Technical Product Manager
+              SDE ➔ Product Manager
             </motion.p>
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
@@ -37,7 +37,7 @@ export function Hero() {
               transition={{ duration: 0.5, delay: 0.06 }}
               className="max-w-4xl text-4xl font-bold leading-tight tracking-tight text-zinc-50 sm:text-5xl sm:leading-[1.1] lg:text-6xl"
             >
-              Umakant Dwivedi — Technical Product Manager.
+              Umakant Dwivedi — Product Manager.
             </motion.h1>
             <motion.div
               initial={{ opacity: 0, y: 10 }}
@@ -129,12 +129,12 @@ export function Hero() {
             <div className="absolute -inset-1 rounded-3xl bg-gradient-to-b from-violet-500/35 via-indigo-500/10 to-transparent blur-xl" />
             <div className="relative overflow-hidden rounded-3xl border border-zinc-800 bg-zinc-950/40 p-5 shadow-2xl shadow-black/35 backdrop-blur-md">
               <div className="flex items-center gap-4">
-                <div className="relative size-20 overflow-hidden rounded-2xl ring-1 ring-white/10">
+                <div className="relative size-28 overflow-hidden rounded-3xl ring-1 ring-white/10 sm:size-32">
                   <Image
                     src="/umakant.png"
                     alt="Umakant Dwivedi"
                     fill
-                    sizes="80px"
+                    sizes="(min-width: 640px) 128px, 112px"
                     className="object-cover"
                     priority
                   />
@@ -147,7 +147,7 @@ export function Hero() {
                     Product • Systems • AI
                   </p>
                   <p className="mt-2 inline-flex items-center rounded-full border border-violet-500/25 bg-violet-500/10 px-3 py-1 text-xs font-medium text-violet-200">
-                    Open to technical PM roles
+                    Open to PM roles
                   </p>
                 </div>
               </div>
