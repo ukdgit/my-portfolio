@@ -129,12 +129,12 @@ export function Hero() {
             <div className="absolute -inset-1 rounded-3xl bg-gradient-to-b from-violet-500/35 via-indigo-500/10 to-transparent blur-xl" />
             <div className="relative overflow-hidden rounded-3xl border border-zinc-800 bg-zinc-950/40 p-5 shadow-2xl shadow-black/35 backdrop-blur-md">
               <div className="flex items-center gap-4">
-                <div className="relative size-28 overflow-hidden rounded-3xl ring-1 ring-white/10 sm:size-32">
+                <div className="relative size-32 overflow-hidden rounded-full ring-1 ring-white/10 sm:size-36">
                   <Image
                     src="/umakant.png"
                     alt="Umakant Dwivedi"
                     fill
-                    sizes="(min-width: 640px) 128px, 112px"
+                    sizes="(min-width: 640px) 144px, 128px"
                     className="object-cover"
                     priority
                   />

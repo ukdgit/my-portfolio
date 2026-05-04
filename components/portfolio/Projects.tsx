@@ -127,19 +127,6 @@ export function Projects() {
         href: LINKEDIN,
         ctaLabel: "View",
       },
-      {
-        title: "Portfolio Website",
-        category: "Engineering",
-        timeframe: "Portfolio",
-        description:
-          "A modern, fast single-page portfolio built with Next.js, Tailwind CSS, and Vercel—designed for clarity, scannability, and senior‑PM aesthetics.",
-        metrics: ["Next.js App Router", "Motion + micro‑interactions", "Dark minimal UI"],
-        tags: ["Next.js", "Tailwind", "Vercel"],
-        icon: LayoutGrid,
-        stackIcons: [Code2, LayoutGrid, Rocket],
-        href: GITHUB,
-        ctaLabel: "View",
-      },
     ],
     []
   );
