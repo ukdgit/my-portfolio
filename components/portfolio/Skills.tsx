@@ -32,7 +32,7 @@ export function Skills() {
           <p className="text-sm font-medium uppercase tracking-[0.2em] text-violet-400/90">
             Skills
           </p>
-          <h2 className="mt-3 text-3xl font-semibold tracking-tight text-zinc-50 sm:text-4xl">
+          <h2 className="mt-3 text-3xl font-bold tracking-tight text-zinc-50 sm:text-4xl">
             How I ship
           </h2>
           <p className="mt-4 max-w-2xl text-zinc-400">

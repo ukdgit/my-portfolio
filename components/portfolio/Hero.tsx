@@ -7,6 +7,7 @@ import Image from "next/image";
 const LINKEDIN = "https://www.linkedin.com/in/umakant-dwivedi-pm/";
 const GITHUB = "https://github.com/ukdgit/";
 const EMAIL = "mailto:dwivediumakant6@gmail.com";
+const BRAND_PILLS = ["Ex-Phenom", "Ex-Amazon", "6.5+ Yrs Exp"] as const;
 
 export function Hero() {
   return (
@@ -28,16 +29,31 @@ export function Hero() {
               transition={{ duration: 0.45 }}
               className="mb-4 text-sm font-medium uppercase tracking-[0.2em] text-violet-400/90"
             >
-              Technical Product Manager
+              SDE ➔ Technical Product Manager
             </motion.p>
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.06 }}
-              className="max-w-4xl text-4xl font-semibold leading-tight tracking-tight text-zinc-50 sm:text-5xl sm:leading-[1.1] lg:text-6xl"
+              className="max-w-4xl text-4xl font-bold leading-tight tracking-tight text-zinc-50 sm:text-5xl sm:leading-[1.1] lg:text-6xl"
             >
               Umakant Dwivedi — Technical Product Manager.
             </motion.h1>
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.45, delay: 0.11 }}
+              className="mt-5 flex flex-wrap gap-2"
+            >
+              {BRAND_PILLS.map((pill) => (
+                <span
+                  key={pill}
+                  className="rounded-full border border-zinc-800 bg-zinc-900/35 px-3.5 py-1.5 text-xs font-semibold text-zinc-200"
+                >
+                  {pill}
+                </span>
+              ))}
+            </motion.div>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
