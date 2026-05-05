@@ -17,6 +17,7 @@ import { useMemo, useState } from "react";
 
 const GITHUB = "https://github.com/ukdgit/";
 const LINKEDIN = "https://www.linkedin.com/in/umakant-dwivedi-pm/";
+const AI_GOVERNANCE_PDF = "/CaseStudy_AIGovernance_UmakantDwivedi.pdf";
 
 type Category =
   | "All"
@@ -124,7 +125,7 @@ export function Projects() {
         tags: ["AI governance", "LLM workflows", "B2B SaaS"],
         icon: Sparkles,
         stackIcons: [Sparkles, Brain, Database],
-        href: LINKEDIN,
+        href: AI_GOVERNANCE_PDF,
         ctaLabel: "View",
       },
     ],
