@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Umakant Dwivedi | Technical Product Manager",
+  title: "Umakant Dwivedi | Product Manager",
   description:
-    "Technical Product Manager bridging complex backend architecture and user-centric product growth. B2B SaaS, HCM, EdTech, RBAC, and data warehousing.",
+    "Product Manager bridging complex backend architecture and user-centric product growth. B2B SaaS, HCM, EdTech, RBAC, and data warehousing.",
 };
 
 export default function RootLayout({
