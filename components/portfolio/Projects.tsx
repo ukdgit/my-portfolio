@@ -128,6 +128,19 @@ export function Projects() {
         href: AI_GOVERNANCE_PDF,
         ctaLabel: "View",
       },
+      {
+        title: "Skill Gap Analysis & Recommendations",
+        category: "AI",
+        timeframe: "Apr 2024 — Feb 2026",
+        description:
+          "Architected an AI skill‑gap workflow to recommend actions with guardrails (LLM for fuzzy matching, rules for thresholds, HRBP review gate) to keep outputs accurate and safe.",
+        metrics: ["~20 hrs/month saved per HRBP", "~50% manual HR ops reduced", "Human‑in‑the‑loop"],
+        tags: ["Skill taxonomy", "Recommendations", "Decision flow"],
+        icon: Brain,
+        stackIcons: [Brain, Sparkles, Shield],
+        href: LINKEDIN,
+        ctaLabel: "View",
+      },
     ],
     []
   );
